@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HOME</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 500px; /* only for demonstration, should be removed */
+  padding: 60px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+        text-align: center;
+        padding: 50%;
+        font-size: 20px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  text-align: justify;
+  width: 50%;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(77, 72, 72);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>CITIES</h2>
+</header>
+
+<section>
+  <nav>
+      <center>
+   <img src = "klaten.jpg" alt="Klaten" width="500" height="400">
+    </center>
+  </nav>
+  
+  <article>
+    <h1>KLATEN</h1>
+    <hr>
+    <p>Klaten adalah salah satu kabupaten di Provinsi Jawa Tengah. Pusat Pemerintahan tepat berada di Kota Klaten. Kabupaten yang berbatasan dengan provinsi Daerah Istimewa Yogyakarta ini memiliki jumlah penduduk 1,175 juta pada tahun 2019 dan mayoritas penduduknya merupakan etnis Jawa</p>
+    <h1>TEMPAT WISATA</h1>
+    <hr>
+    <p>Berikut ini merupakan tempat wisata yang direkomendasikan ketika berkunjung ke Klaten
+    <ol>
+        <li>Umbul Ponggok</li>
+        <li>Rowo Jombor</li>
+        <li>Deles Indah</li>
+    </ol>
+    </p>
+    <h1>KULINER</h1>
+    <hr>
+    <p>Berikut ini merupakan makanan yang direkomendasikan ketika berkunjung ke Klaten</p>
+    <ol>
+        <li>Sego Wiwit</li>
+        <li>Sego Gudangan</li>
+        <li>Sop Ayam Pak Min</li>
+    </ol>
+
+  </article>
+</section>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>
+

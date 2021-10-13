@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DAFTAR MENU</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 500px; /* only for demonstration, should be removed */
+  background : rgb(124, 119, 119);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+        text-align: center;
+        padding: 50%;
+        font-size: 20px;
+}
+
+article {
+  float: left;
+  padding: 90px;
+  text-align: justify;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(77, 72, 72);
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>This is my first web</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="open.html">OPEN</a></li><br>
+      <li><a href="index.html">HOME</a></li><br>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>HALLO</h1>
+    <p>Ini merupakan web pertama yang saya buat, web ini akan berisi mengenai tempat tinggal saya dan beberapa tempat wisata dan tempat kuliner.</p>
+    <p>Jika klik pada menu HOME maka akan diarahkan pada web yang akan membahas mengenai rekomendasi tempat wisata dan tempat kuliner pada daerah tempat tinggal saya.</p>
+    <p>Jika klik pada menu ABOUT maka akan diarahkan pada web yang akan membahas sedikit profil mengenai saya mengenai beberapa media yang dapat digunakan untuk menghubungi saya.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
