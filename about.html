@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ABOUT ME</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 500px; /* only for demonstration, should be removed */
+  padding: 60px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+        text-align: center;
+        padding: 50%;
+        font-size: 20px;
+}
+
+article {
+  float: left;
+  padding: 50px;
+  text-align: justify;
+  width: 50%;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(77, 72, 72);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>ABOUT ME</h2>
+</header>
+
+<section>
+  <nav>
+      <center>
+   <img src = "amalia.jpg" alt="Amalia" width="300" height="400">
+    </center>
+  </nav>
+  
+  <article>
+    <h1>NAMA</h1>
+    <hr>
+    <p>Nama saya adalah Amalia Khairunnisa Maharani atau dapat dipanggil Amalia. Saya merupakan mahasiswa STMIK AKAKOM Yogyakarta jurusan 
+        Sistem Informasi Akuntansi angkatan 2020. Saya lahir di kota Klaten pada 8 April 2002 dan sekarang berumur 19 tahun.
+    </p>
+    <br>
+    <h1>CONTACT</h1>
+    <hr>
+    <p>Berikut ini merupakan media yang dapat digunakan untuk menghubungi saya :</p>
+    <ol>
+        <li><a href="https://amaliiakm@gmail.com">Email</a></li>
+        <li><a href="https://wa.me/qr/SUYAEH2UTK3AE1">WhatsApp</a></li>
+        <li><a href="https://instagram.com/amaliiakm?utm_medium=copy_link">Instagram</a></li>
+        <li><a href="http://mobile.twitter.com/amaliiakm">Twitter</a></li>
+    </ol>
+
+  </article>
+</section>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>
+
